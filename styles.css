@@ -831,6 +831,8 @@ section.section{ padding: 100px 0; }
   cursor: pointer !important;
   -webkit-tap-highlight-color: transparent; /* بيشيل الخلفية الرمادية المزعجة وقت اللمس ع الموبايل */
   touch-action: manipulation; /* بيخلي الاستجابة للّمس فورية من غير تأخير التزوم */
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
   }
    .nav-links { 
