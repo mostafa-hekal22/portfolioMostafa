@@ -4,11 +4,6 @@
    with multiplayer-cursor accents, dot-grid texture, and a
    violet → cyan → pink signal gradient.
    ============================================================ */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
