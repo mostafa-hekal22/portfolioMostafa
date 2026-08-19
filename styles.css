@@ -847,7 +847,9 @@ section.section{ padding: 100px 0; }
     top: 75px !important; /* بتنزل تحت الهيدر */
     left: 0 !important;
     width: 100% !important;
-    background: var(--surface, #12121D) !important;
+    height: auto !important;
+    max-height: 400px !important;
+   background: var(--surface, #12121D) !important;
     padding: 20px !important;
     z-index: 999 !important;
     gap: 15px !important;
