@@ -1063,34 +1063,3 @@ a:focus-visible, button:focus-visible{
   .cs-gallery .cs-shot:first-child{ grid-column: span 1; }
   .cs-next-card{ flex-direction: column; align-items: flex-start; text-align: left; }
 }
-
-
-/* --- Mobile Navbar Fix --- */
-@media (max-width: 980px) {
-  /* اجعل الحاوية الرئيسية للـ Navbar تستخدم Flexbox وتوزع العناصر */
-  .navbar, header {
-    display: flex !important;
-    justify-content: space-between !important; /* ده هيخلي "Mostafa Hekal" على الشمال والأيقونة على اليمين بالضبط */
-    align-items: center !important;
-    width: 100vw !important; /* عرض الشاشة بالكامل */
-    padding: 10px 16px !important; /* مسافات داخلية متوازنة */
-    box-sizing: border-box !important; /* أهم حاجة عشان الـ padding ما يوسعش الصفحة */
-    position: relative !important; /* عشان نضمن إنها ثابتة */
-    left: 0 !important;
-  }
-
-  /* ظبط الأيقونة نفسها */
-  .nav-burger {
-    display: flex !important;
-    width: auto !important; /* اسمح للأيقونة تاخد حجمها الطبيعي */
-    margin: 0 !important; /* الغي أي مارجن عشان ما تخرجش بره */
-    position: static !important; /* خليها في مكانها الطبيعي جوه الـ Flexbox */
-    order: 2; /* خليها العنصر التاني بعد الاسم لو عايز */
-  }
-  
-  /* ظبط باقي العناصر (زي الاسم) لو موجودة */
-  .nav-brand {
-      order: 1;
-      margin: 0 !important;
-  }
-}
