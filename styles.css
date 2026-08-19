@@ -1115,7 +1115,7 @@ body, html {
 .navbar, header {
   box-sizing: border-box !important;
   max-width: 100% !important;
-  overflow: hidden !important;
+  overflow: visible !important; /* دي بتخلي القائمة تظهر بره حدود الهيدر عادي من غير ما تتقص */
 }
 
 /* بنجبر الأيقونة تدخل جوه باستخدام الـ transform من غير ما توسع الشاشة */
