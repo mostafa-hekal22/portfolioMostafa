@@ -813,7 +813,7 @@ section.section{ padding: 100px 0; }
   .nav-burger{ display: flex; }
    .navbar .btn-secondary, 
   header .btn-secondary {
-    display: none !important;
+    display: none !important; }
   .hero-inner{ grid-template-columns: 1fr; }
   .hero{ padding-top: 140px; text-align: left; }
   .hero-visual{ max-width: 380px; margin: 40px auto 0; }
