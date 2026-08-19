@@ -39,14 +39,20 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
-  // Mobile menu
+// Mobile menu (Fixed for Mobile Touch)
   const burger = document.querySelector('[data-burger]');
   const navLinks = document.querySelector('.nav-links');
   if (burger && navLinks) {
-    burger.addEventListener('click', function () {
+    const toggleMenu = (e) => {
+      e.preventDefault(); // بيمنع أي تداخل في اللمس المزدوج
+      e.stopPropagation();
       const open = navLinks.classList.toggle('nav-open');
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+    };
+
+    burger.addEventListener('click', toggleMenu);
+    burger.addEventListener('touchstart', toggleMenu, { passive: false });
+
     navLinks.querySelectorAll('a').forEach((a) =>
       a.addEventListener('click', () => navLinks.classList.remove('nav-open'))
     );
