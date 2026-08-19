@@ -1162,3 +1162,14 @@ body, html {
         gap: 15px !important;
         border-bottom: 1px solid var(--border-strong, #333);
     }
+   .nav-links.nav-open a {
+  color: var(--text, #fff) !important;
+}
+
+[data-theme="light"] .nav-links.nav-open {
+  background: var(--surface, #ffffff) !important;
+}
+
+[data-theme="light"] .nav-links.nav-open a {
+  color: var(--text, #111) !important;
+}
