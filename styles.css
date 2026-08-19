@@ -823,6 +823,7 @@ section.section{ padding: 100px 0; }
   .work-card.featured{ grid-column: span 1; }
   .services-grid{ grid-template-columns: repeat(2, 1fr); }
   .contact-wrap{ grid-template-columns: 1fr; }
+   .nav-burger {margin-left : 15PX}
 }
 
 @media (max-width: 560px){
