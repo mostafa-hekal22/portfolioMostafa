@@ -814,7 +814,7 @@ section.section{ padding: 100px 0; }
   .work-card.featured{ grid-column: span 1; }
   .services-grid{ grid-template-columns: repeat(2, 1fr); }
   .contact-wrap{ grid-template-columns: 1fr; }
-   .cursor-chip {
+   .cursor-chip .chip-1 .chip-2 .chip-3{
     position: absolute;
     display: flex;
     align-items: center;
