@@ -1063,3 +1063,21 @@ a:focus-visible, button:focus-visible{
   .cs-gallery .cs-shot:first-child{ grid-column: span 1; }
   .cs-next-card{ flex-direction: column; align-items: flex-start; text-align: left; }
 }
+
+
+@media (max-width: 980px) {
+  .navbar, header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .nav-burger {
+    display: flex !important;
+    margin-left: auto !important;
+  }
+}
