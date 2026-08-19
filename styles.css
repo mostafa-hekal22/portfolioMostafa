@@ -1064,15 +1064,15 @@ a:focus-visible, button:focus-visible{
   .cs-next-card{ flex-direction: column; align-items: flex-start; text-align: left; }
 }
 
-/* اجبار كل عناصر الموقع بلا استثناء إنها ما تخرجش بره حدود الشاشة أبداً */
-*, *::before, *::after {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
+/* إخفاء أي عنصر يتعدى عرض الشاشة لكي نعرف مكانه أو ننهي المشكلة */
+body {
+  overflow-x: hidden !important;
+  position: relative !important;
+  width: 100% !important;
 }
 
-html, body {
+/* اجبار أي صورة أو ديف كبير إنه ينكمش بالغصب */
+img, video, canvas, svg, iframe {
   max-width: 100% !important;
-  overflow-x: hidden !important;
-  width: 100% !important;
-  position: relative !important;
+  height: auto !important;
 }
