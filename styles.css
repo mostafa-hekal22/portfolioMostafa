@@ -814,6 +814,9 @@ section.section{ padding: 100px 0; }
   .work-card.featured{ grid-column: span 1; }
   .services-grid{ grid-template-columns: repeat(2, 1fr); }
   .contact-wrap{ grid-template-columns: 1fr; }
+   .cursor-chip {
+    display: flex !important;
+    visibility: visible !important; opacity: 1 !important; position: relative !important; z-index: 100 !important;}
    .nav-burger { 
    display: flex !important; 
   position: relative !important;
@@ -825,16 +828,14 @@ section.section{ padding: 100px 0; }
   pointer-events: auto !important;
   cursor: pointer !important;
 }
-  
    .nav-links { 
     display: none; 
   }
-
   /* تأكد إن الـ header واخد relative عشان القائمة تنزل تحته مظبوط */
   header, .navbar {
     position: relative !important;
+    overflow: visible !important;
   }
-
 /* دي القائمة وهي مفتوحة بالكامل */
 .nav-links.nav-open {
   display: flex !important;
@@ -844,6 +845,9 @@ section.section{ padding: 100px 0; }
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
   background: #12121D !important;
   padding: 24px !important;
   z-index: 99999 !important;
@@ -851,7 +855,6 @@ section.section{ padding: 100px 0; }
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7) !important;
   border-bottom: 2px solid #333 !important;
 }
-
 /* بنجبر كل اللينكات اللي جواها انها تظهر وتتفرش */
 .nav-links.nav-open a {
   display: block !important;
