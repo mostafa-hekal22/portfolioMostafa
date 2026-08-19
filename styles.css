@@ -825,7 +825,7 @@ section.section{ padding: 100px 0; }
   pointer-events: auto !important;
   cursor: pointer !important;
 }
-  }
+  
    .nav-links { 
     display: none; 
   }
