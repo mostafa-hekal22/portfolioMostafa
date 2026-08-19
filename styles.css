@@ -803,8 +803,8 @@ section.section{ padding: 100px 0; }
   .nav-links{ display: none; }
   .nav-burger{ display: flex;  margin-left: auto !important;  margin-right: 4px !important;}
    .navbar .btn-secondary, 
-  header .btn-secondary {
-    display: none !important; }
+  header .btn-secondary .btn-primary {
+    display: none !important; text-align: center}
   .hero-inner{ grid-template-columns: 1fr; }
   .hero{ padding-top: 50px; text-align: center; }
   .hero-visual{ max-width: 380px; margin: 40px auto 0; }
