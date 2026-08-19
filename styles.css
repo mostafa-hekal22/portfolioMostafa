@@ -1123,3 +1123,25 @@ body, html {
   position: relative !important;
   right: 10px !important; /* هيدخلها جوه الشاشة 10 بكسل بالتمام والكمال */
 }
+
+@media (max-width: 860px) {
+  .cs-gallery {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .cs-gallery .cs-shot,
+  .cs-gallery .cs-shot:nth-child(1),
+  .cs-gallery .cs-shot:nth-child(2),
+  .cs-gallery .cs-shot:nth-child(3) {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
+  }
+  
+  .cs-gallery .cs-shot img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
