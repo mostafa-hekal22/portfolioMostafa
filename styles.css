@@ -445,7 +445,6 @@ section{ position: relative; z-index: 1; }
   border: 1px dashed var(--border-strong);
   animation: spin 40s linear infinite;
 }
-@keyframes spin{ to{ transform: rotate(360deg); } }
 
 .cursor-chip{
   position: absolute;
