@@ -830,7 +830,7 @@ section.section{ padding: 100px 0; }
     border: 1px solid var(--border-strong);
     top: 6%;
     left: -8%;
-    animation-delay: 0s
+    animation-delay: 0s;
     animation: 6s ease-in-out 0s infinite normal none running float;
    }
    .nav-burger { 
