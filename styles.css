@@ -824,12 +824,14 @@ section.section{ padding: 100px 0; }
   .services-grid{ grid-template-columns: repeat(2, 1fr); }
   .contact-wrap{ grid-template-columns: 1fr; }
    .nav-burger { 
-    display: flex !important; 
-    position: relative !important;
-    right: 12px !important;
-    z-index: 1000 !important;
-    cursor: pointer !important;
-    margin-left: 20px !important;
+   display: flex !important; 
+  position: relative !important;
+  right: 12px !important;
+  z-index: 9999 !important; /* رفقمناها لرقم كبير عشان تبقى فوق أي حاجة في الصفحة */
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent; /* بيشيل الخلفية الرمادية المزعجة وقت اللمس ع الموبايل */
+  touch-action: manipulation; /* بيخلي الاستجابة للّمس فورية من غير تأخير التزوم */
+}
   }
    .nav-links { 
     display: none; 
