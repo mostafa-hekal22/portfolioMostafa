@@ -815,8 +815,20 @@ section.section{ padding: 100px 0; }
   .services-grid{ grid-template-columns: repeat(2, 1fr); }
   .contact-wrap{ grid-template-columns: 1fr; }
    .cursor-chip {
-    display: flex !important;
-    visibility: visible !important; opacity: 1 !important; position: relative !important; z-index: 100 !important;}
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-2);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 3;
+    gap: 8px;
+    padding: 8px 14px 8px 10px;
+    border-radius: 100px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    animation: 6s ease-in-out 0s infinite normal none running float;
    .nav-burger { 
    display: flex !important; 
   position: relative !important;
