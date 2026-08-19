@@ -1076,3 +1076,15 @@ img, video, canvas, svg, iframe {
   max-width: 100% !important;
   height: auto !important;
 }
+
+.nav-burger {
+  margin-right: 15px !important; /* هيزقها لجوه الشاشة وتبان كلها بشكل بيرفكت */
+  position: relative !important;
+  right: 0 !important;
+}
+
+/* التأكد إن الـ Navbar جوا حدود الشاشة ومفيش حاجة زقها */
+.navbar, header {
+  padding-right: 10px !important;
+  padding-left: 15px !important;
+}
