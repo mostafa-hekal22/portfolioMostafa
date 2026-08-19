@@ -1064,15 +1064,21 @@ a:focus-visible, button:focus-visible{
   .cs-next-card{ flex-direction: column; align-items: flex-start; text-align: left; }
 }
 
-/* إخفاء أي عنصر يتعدى عرض الشاشة لكي نعرف مكانه أو ننهي المشكلة */
-body {
+body, html {
   overflow-x: hidden !important;
-  position: relative !important;
   width: 100% !important;
+  max-width: 100% !important;
 }
 
-/* اجبار أي صورة أو ديف كبير إنه ينكمش بالغصب */
-img, video, canvas, svg, iframe {
+/* بنخلي الحاوية بتاعت الـ Navbar تاخد العرض كامل بالبوكس سيزنج من غير هوامش بره */
+.navbar, header {
+  box-sizing: border-box !important;
   max-width: 100% !important;
-  height: auto !important;
+  overflow: hidden !important;
+}
+
+/* بنجبر الأيقونة تدخل جوه باستخدام الـ transform من غير ما توسع الشاشة */
+.nav-burger {
+  position: relative !important;
+  right: 10px !important; /* هيدخلها جوه الشاشة 10 بكسل بالتمام والكمال */
 }
