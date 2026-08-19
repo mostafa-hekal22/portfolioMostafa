@@ -831,6 +831,29 @@ section.section{ padding: 100px 0; }
     cursor: pointer !important;
     margin-left: 20px !important;
   }
+   .nav-links { 
+    display: none; 
+  }
+  
+  /* دي بقى اللي الجافاسكريبت بيفعلها عشان تظهر القائمة */
+  .nav-links.nav-open {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 75px !important; /* بتنزل تحت الهيدر */
+    left: 0 !important;
+    width: 100% !important;
+    background: var(--surface, #12121D) !important;
+    padding: 20px !important;
+    z-index: 999 !important;
+    gap: 15px !important;
+    border-bottom: 1px solid var(--border-strong, #333);
+  }
+
+  /* تأكد إن الـ header واخد relative عشان القائمة تنزل تحته مظبوط */
+  header, .navbar {
+    position: relative !important;
+  }
 }
 
 @media (max-width: 560px){
