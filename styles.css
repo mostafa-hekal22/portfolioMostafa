@@ -1151,8 +1151,6 @@ body, html {
         display: flex !important;
         flex-direction: column !important;
         position: absolute !important;
-        align-items: center !important;
-        text-align: center !important;
         top: 75px !important;
         left: 0 !important;
         width: 100% !important;
@@ -1161,9 +1159,13 @@ body, html {
         z-index: 999 !important;
         gap: 15px !important;
         border-bottom: 1px solid var(--border-strong, #333);
+        align-items: center !important;
+        text-align: center !important;
     }
    .nav-links.nav-open a {
   color: var(--text, #fff) !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 [data-theme="light"] .nav-links.nav-open {
