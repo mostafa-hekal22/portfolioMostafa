@@ -806,7 +806,7 @@ section.section{ padding: 100px 0; }
   header .btn-secondary {
     display: none !important; }
   .hero-inner{ grid-template-columns: 1fr; }
-  .hero{ padding-top: 140px; text-align: left; }
+  .hero{ padding-top: 50px; text-align: center; }
   .hero-visual{ max-width: 380px; margin: 40px auto 0; }
   .bento{ grid-template-columns: repeat(2, 1fr); }
   .bento-b1, .bento-b2, .bento-b5, .bento-b6{ grid-column: span 2; }
